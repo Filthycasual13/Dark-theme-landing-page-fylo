@@ -312,13 +312,13 @@ body {
     padding-left: 35px;
     background-image: url(images/icon-phone.svg);
     background-repeat: no-repeat;
-    background-position-y: 10px;
+    background-position-y: 0px;
   }
   #footer #email {
     padding-left: 35px;
     background-image: url(images/icon-email.svg);
     background-repeat: no-repeat;
-    background-position-y: 10px;
+    background-position-y: 0px;
   }
   #footer .about {
     display: -webkit-box;
