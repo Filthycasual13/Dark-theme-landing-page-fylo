@@ -327,3 +327,32 @@ body {
 }
 
 }
+
+@media only screen and(max-width: 400px) {
+
+    .section-four {
+        
+        .testimonial {
+            .person {
+                img {
+                    position: relative;
+                    top: 10px;
+                    width: 50%;
+                    height: 62%;
+                }
+                
+                h4 {
+                    position: relative;
+                    right: 35px;
+                    grid-area: two;
+                }
+    
+                span {
+                    position: relative;
+                    right: 35px;
+                    bottom: 15px;
+                }
+            }
+        }
+    }
+}
