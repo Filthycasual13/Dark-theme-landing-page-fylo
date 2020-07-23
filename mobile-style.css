@@ -5,7 +5,7 @@ body {
   background-color: #181f2a;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .btn {
     position: relative;
     display: -webkit-box;
@@ -332,25 +332,6 @@ body {
   }
   #footer .about span {
     padding: 5px 0 5px 0;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .section-four .testimonial .person img {
-    position: relative;
-    top: 10px;
-    width: 50%;
-    height: 62%;
-  }
-  .section-four .testimonial .person h4 {
-    position: relative;
-    right: 35px;
-    grid-area: two;
-  }
-  .section-four .testimonial .person span {
-    position: relative;
-    right: 35px;
-    bottom: 15px;
   }
 }
 /*# sourceMappingURL=mobile-style.css.map */

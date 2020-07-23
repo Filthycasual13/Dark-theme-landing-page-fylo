@@ -16,14 +16,12 @@ body {
     background-color: $mainBg;
 }
 
-@media only screen and (max-width:650px) {
-
 .btn {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 30%;
     height: 45px;
     background: linear-gradient(left, $cyan, $blue) ;
     border-radius: 20px;
@@ -38,11 +36,11 @@ body {
     flex-direction: row;
     width: 100%;
     height: 450px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: $introBg;
     background-image: url(images/illustration-intro.png), url(images/bg-curvy-mobile.svg);;
-    background-size: 88% 60%, 100% 30%;
-    background-position: 25px, 0 315px;
+    background-size: 45% 45%, 100% 30%;
+    background-position: 170px 80px, 0 315px;
     background-repeat: no-repeat;
 
     #logo {
@@ -51,7 +49,7 @@ body {
         right: 20px;
         
         img {
-            transform: scale(0.6);
+            transform: scale(0.4);
         }
     }
 
@@ -74,6 +72,7 @@ body {
                     text-decoration: none;
                     color: $white;
                     font-family: $headFont;
+                    font-size: 0.5em;
                     font-weight: 400;
                 }
             }
@@ -82,59 +81,66 @@ body {
 }
 
 .section-one {
+    position: relative;
+    top: -170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 425px;
+    height: 175px;
     color: $white;
     padding: 0 25px 0 25px;
     
     h1 {
         text-align: center;
         font-family: $headFont;
+        font-size: 1.8em;
     }
 
     p {
+        width: 60%;
         text-align: center;
         font-family: $bodyFont;
+        font-size: 0.8em;
         font-weight: 400;
         padding-bottom: 20px;
     }
 }
 
 .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     color: $white;
     padding: 0 25px 0 25px;
     
     .feature {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        position: relative;
+        bottom: 80px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
         
         
         img {
             justify-self: center;
-            grid-column-start: 1;
-            grid-column-end: 3;
             padding: 40px 0 20px 0;
+            transform: scale(0.7);
         }
 
         h1 {
             justify-self: center;
-            grid-column-start: 1;
-            grid-column-end: 3;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1em;
             font-family: $headFont;
             font-weight: 700;
             
         }
         p {
             position: relative;
-            top: -20px;
+            top: -15px;
             justify-self: center;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            font-size: 0.7em;
             font-family: $bodyFont;
             font-weight: 400;
             text-align: center;
@@ -143,31 +149,41 @@ body {
 }
 
 .section-three {
+    position: relative;
+    bottom: 100px;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     color: $white;
     padding: 100px 25px 50px 25px;
 
     img {
-        position: relative;
-        left: 20px;
-        width: 88%;
-        height: 60%;
+        position: absolute;
+        bottom: -70px;
+        right: 170px;
+        transform: scale(0.45);
     }
 
     h1 {
-        text-align: center;
-        font-size: 1.3em;
+        width: 280px;
+        text-align: left;
+        font-size: 1.5em;
         font-family: $headFont;
         font-weight: 700;
     }
 
     p {
+        font-size: 0.7em;
         font-family: $bodyFont;
         font-weight: 400;
         text-align: left;
     }
 
     span {
+        width: 140px;
         color: $cyan;
+        font-size: 0.7em;
         font-family: $bodyFont;
         font-weight: 400;
         text-align: left;
@@ -176,9 +192,9 @@ body {
         img {
             position: relative;
             left: 0;
-            top: 3px;
-            width: 5%;
-            height: 5%;
+            top: 10px;
+            width: 20%;
+            height: 20%;
         }
     }
 }
@@ -186,53 +202,55 @@ body {
 .section-four {
     display: grid;
     gap: 30px;
+    height: 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
     color: $white;
     padding: 30px 25px 0 25px;
 
     img {
-        position: relative;
+        position: absolute;
         top: 50px;
         transform: scale(0.6);
     }
 
     .testimonial {
         background-color: $testBg;
-        height: 210px;
+        height: 110px;
         padding: 15px 10px 10px 15px;
         border-radius: 10px;
 
         p {
+            font-size: 0.5em;
             font-family: $bodyFont;
         }
 
         .person {
-            display: grid;
-            gap: 0;
-            grid-template-areas: 
-                "one two two"
-                "one three three";
+            height: 50px;
+            width: 120px;
+            
             img {
                 position: relative;
-                top: 10px;
-                grid-area: one;
-                width: 50%;
-                height: 82%;
+                top: -40px;
+                left: -40px;
+                transform: scale(0.3);
                 border-radius: 50%;
             }
             
             h4 {
                 position: relative;
-                right: 75px;
-                grid-area: two;
+                bottom: 130px;
+                left: 60px;
+                font-size: 0.5em;
                 font-family: $headFont;
                 font-weight: 700;
             }
 
             span {
                 position: relative;
-                right: 75px;
-                bottom: 15px;
-                grid-area: three;
+                bottom: 140px;
+                left: 60px;
+                font-size: 0.4em;
                 font-family: $bodyFont;
                 font-weight: 400;
             }
@@ -240,24 +258,28 @@ body {
     }
 
     #card {
-        position: relative;
-        top: 160px;
-        background-color: $testBg;
-        height: 310px;
+        position: absolute;
+        top: 275vw;
+        left: 120px;
+        height: 110px;
+        width: 400px;
         padding: 15px 20px 10px 20px;
         border-radius: 10px;
         box-shadow: 5px 5px 8px hsla(218, 27%, 8%, 0.952);
+        background-color: $testBg;
+        z-index: 2;
         
 
         
         h1 {
             text-align: center;
-            font-size: 1.3em;
+            font-size: 0.8em;
             font-family: $headFont;
             font-weight: 700;
         }
     
         p {
+            font-size: 0.6em;
             font-family: $bodyFont;
             font-weight: 400;
             text-align: center;
@@ -266,37 +288,53 @@ body {
 
         .textbox {
             position: relative;
-            left: 10%;
-            width: 80%;
-            height: 45px;
+            left: 3%;
+            width: 55%;
+            height: 20px;
             border-radius: 20px;
             border: none;
 
             &::placeholder {
                 padding-left: 10px;
                 color: #c0c0c0;
+                font-size: 0.6em;
             }
         }
 
         .get-started {
-            position: relative;
-            left: 10%;
-            top: 20px;
+            position: absolute;
+            width: 30%;
+            height: 20px;
+            right: 3%;
+            top: 100px;
+            font-size: 0.5em;
         }
 
     }
 }
 
 #footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     color: $white;
     background-color: $footerBg;
-    height: 600px;
-    padding: 250px 25px 0 25px;
+    height: 200px;
+    padding: 200px 25px 0 25px;
+    font-size: 0.5em;
     font-family: $bodyFont;
 
+    img {
+        position: absolute;
+        bottom: 190px;
+        transform: scale(0.5);
+    }
+
     #address {
+        width: 200px;
         padding-left: 35px;
         background-image: url(images/icon-location.svg);
+        background-size: 10px 15px;
         background-repeat: no-repeat;
         background-position-y: 10px;
     }
@@ -304,21 +342,28 @@ body {
     #telephone {
         padding-left: 35px;
         background-image: url(images/icon-phone.svg);
+        background-size: 10px 10px;
         background-repeat: no-repeat;
-        background-position-y: 0px;
+        background-position: 20px 10px;
     }
 
     #email {
+        position: relative;
+        top: 30px;
+        right: 100px;
         padding-left: 35px;
         background-image: url(images/icon-email.svg);
+        background-size: 10px 10px;
         background-repeat: no-repeat;
-        background-position-y: 0px;
+        background-position: 20px 10px;
     }
 
     .about {
+        position: relative;
+        right: 100px;
         display: flex;
         flex-direction: column;
-        padding: 20px 0 30px 0;
+        padding: 0 0 30px 20px;
 
         span {
             padding: 5px 0 5px 0;
@@ -326,4 +371,3 @@ body {
     }
 }
 
-}
