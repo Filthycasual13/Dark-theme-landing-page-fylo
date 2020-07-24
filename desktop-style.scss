@@ -17,7 +17,7 @@ body {
     background-color: $mainBg;
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:701px) {
     .btn {
         position: relative;
         display: flex;
@@ -437,7 +437,7 @@ body {
             height: 120px;
     
             p {
-                font-size: 0.6em;
+                font-size: 0.7em;
                 font-family: $bodyFont;
             }
     
@@ -457,7 +457,7 @@ body {
                     position: relative;
                     left: 55px;
                     bottom: 35px;
-                    font-size: 0.55em;
+                    font-size: 0.6em;
                     font-family: $headFont;
                     font-weight: 700;
                 }
@@ -466,7 +466,7 @@ body {
                     position: relative;
                     left: 55px;
                     bottom: 40px;
-                    font-size: 0.45em;
+                    font-size: 0.5em;
                     font-family: $bodyFont;
                     font-weight: 400;
                 }
