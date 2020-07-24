@@ -188,16 +188,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .section-three .container img {
-    width: 290px;
-    height: 240px;
+    width: 260px;
+    height: 210px;
   }
   .section-three .container .container-txt {
-    padding-left: 30px;
-    width: 30%;
+    width: 35%;
   }
   .section-three .container .container-txt h1 {
     width: 280px;
@@ -448,6 +448,130 @@ body {
   }
   #nav .links ul li a {
     font-size: 1.2em;
+  }
+  .section-four {
+    padding: 30px 155px 0 155px;
+  }
+  .section-four .testimonial {
+    background-color: #202a3c;
+    height: 120px;
+  }
+  .section-four .testimonial p {
+    font-size: 0.6em;
+    font-family: "Open Sans", sans-serif;
+  }
+  .section-four .testimonial .person {
+    height: 50px;
+    width: 130px;
+  }
+  .section-four .testimonial .person img {
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .section-four .testimonial .person h4 {
+    position: relative;
+    left: 55px;
+    bottom: 35px;
+    font-size: 0.55em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  .section-four .testimonial .person span {
+    position: relative;
+    left: 55px;
+    bottom: 40px;
+    font-size: 0.45em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  #card {
+    position: relative;
+    top: 75px;
+    left: 34%;
+    height: 160px;
+    width: 380px;
+    padding: 15px 20px 10px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
+            box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
+    background-color: #202a3c;
+    color: white;
+    z-index: 2;
+  }
+  #card h1 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  #card p {
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #card .textbox {
+    position: relative;
+    left: 3%;
+    width: 55%;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+  }
+  #card .textbox::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #c0c0c0;
+    font-size: 0.7em;
+  }
+  #card .textbox:-ms-input-placeholder {
+    padding-left: 10px;
+    color: #c0c0c0;
+    font-size: 0.7em;
+  }
+  #card .textbox::-ms-input-placeholder {
+    padding-left: 10px;
+    color: #c0c0c0;
+    font-size: 0.7em;
+  }
+  #card .textbox::placeholder {
+    padding-left: 10px;
+    color: #c0c0c0;
+    font-size: 0.7em;
+  }
+  #card .get-started {
+    position: absolute;
+    width: 30%;
+    height: 20px;
+    left: 260px;
+    top: 140px;
+    font-size: 0.5em;
+  }
+  #footer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+    background-color: #0b1523;
+    height: 200px;
+    padding: 200px 25px 0 400px;
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+  }
+  #footer img {
+    position: absolute;
+    bottom: 190px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 /*# sourceMappingURL=desktop-style.css.map */
