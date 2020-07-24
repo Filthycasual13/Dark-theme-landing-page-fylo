@@ -5,7 +5,7 @@ body {
   background-color: #181f2a;
 }
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 550px) {
   .btn {
     position: relative;
     display: -webkit-box;
@@ -244,29 +244,31 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
-  .section-four #card {
+  #card {
     position: relative;
     top: 160px;
     background-color: #202a3c;
+    color: white;
     height: 310px;
     padding: 15px 20px 10px 20px;
+    margin: 0 20px 0 20px;
     border-radius: 10px;
     -webkit-box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
             box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
   }
-  .section-four #card h1 {
+  #card h1 {
     text-align: center;
     font-size: 1.3em;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
   }
-  .section-four #card p {
+  #card p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
     padding-bottom: 15px;
   }
-  .section-four #card .textbox {
+  #card .textbox {
     position: relative;
     left: 10%;
     width: 80%;
@@ -274,23 +276,23 @@ body {
     border-radius: 20px;
     border: none;
   }
-  .section-four #card .textbox::-webkit-input-placeholder {
+  #card .textbox::-webkit-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
   }
-  .section-four #card .textbox:-ms-input-placeholder {
+  #card .textbox:-ms-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
   }
-  .section-four #card .textbox::-ms-input-placeholder {
+  #card .textbox::-ms-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
   }
-  .section-four #card .textbox::placeholder {
+  #card .textbox::placeholder {
     padding-left: 10px;
     color: #c0c0c0;
   }
-  .section-four #card .get-started {
+  #card .get-started {
     position: relative;
     left: 10%;
     top: 20px;

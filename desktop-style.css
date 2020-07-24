@@ -163,8 +163,8 @@ body {
   }
   .section-three {
     position: relative;
+    left: 20px;
     bottom: 100px;
-    left: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,30 +172,46 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
     color: white;
     padding: 100px 25px 50px 25px;
   }
-  .section-three img {
-    position: absolute;
-    left: -300px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+  .section-three .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .section-three h1 {
+  .section-three .container img {
+    width: 290px;
+    height: 240px;
+  }
+  .section-three .container .container-txt {
+    padding-left: 30px;
+  }
+  .section-three .container .container-txt h1 {
     width: 280px;
     text-align: left;
     font-size: 1.5em;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
   }
-  .section-three p {
+  .section-three .container .container-txt p {
     font-size: 0.7em;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: left;
   }
-  .section-three span {
+  .section-three .container .container-txt span {
     width: 130px;
     color: #65e2d9;
     font-size: 0.7em;
@@ -204,7 +220,7 @@ body {
     text-align: left;
     border-bottom: 1px solid #65e2d9;
   }
-  .section-three span img {
+  .section-three .container .container-txt span img {
     position: relative;
     left: 0;
     top: 5px;
@@ -215,7 +231,7 @@ body {
     display: -ms-grid;
     display: grid;
     gap: 30px;
-    height: 350px;
+    height: 200px;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 100%;
@@ -243,54 +259,55 @@ body {
   }
   .section-four .testimonial .person img {
     position: relative;
-    top: -5px;
-    right: 10px;
-    bottom: 30px;
-    width: 60px;
-    height: 60px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
   }
   .section-four .testimonial .person h4 {
     position: relative;
-    left: 5px;
+    left: 45px;
+    bottom: 25px;
     font-size: 0.5em;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
   }
   .section-four .testimonial .person span {
     position: relative;
-    left: 5px;
+    left: 45px;
+    bottom: 30px;
     font-size: 0.4em;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
-  .section-four #card {
-    position: absolute;
-    top: 275vw;
-    left: 120px;
+  #card {
+    position: relative;
+    top: 55px;
+    left: 23%;
     height: 110px;
-    width: 400px;
+    width: 380px;
     padding: 15px 20px 10px 20px;
     border-radius: 10px;
     -webkit-box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
             box-shadow: 5px 5px 8px rgba(15, 19, 26, 0.952);
     background-color: #202a3c;
+    color: white;
     z-index: 2;
   }
-  .section-four #card h1 {
+  #card h1 {
     text-align: center;
     font-size: 0.8em;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
   }
-  .section-four #card p {
+  #card p {
     font-size: 0.6em;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
     padding-bottom: 15px;
   }
-  .section-four #card .textbox {
+  #card .textbox {
     position: relative;
     left: 3%;
     width: 55%;
@@ -298,31 +315,31 @@ body {
     border-radius: 20px;
     border: none;
   }
-  .section-four #card .textbox::-webkit-input-placeholder {
+  #card .textbox::-webkit-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
     font-size: 0.6em;
   }
-  .section-four #card .textbox:-ms-input-placeholder {
+  #card .textbox:-ms-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
     font-size: 0.6em;
   }
-  .section-four #card .textbox::-ms-input-placeholder {
+  #card .textbox::-ms-input-placeholder {
     padding-left: 10px;
     color: #c0c0c0;
     font-size: 0.6em;
   }
-  .section-four #card .textbox::placeholder {
+  #card .textbox::placeholder {
     padding-left: 10px;
     color: #c0c0c0;
     font-size: 0.6em;
   }
-  .section-four #card .get-started {
+  #card .get-started {
     position: absolute;
     width: 30%;
     height: 20px;
-    left: 290px;
+    left: 260px;
     top: 100px;
     font-size: 0.5em;
   }
