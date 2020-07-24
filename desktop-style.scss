@@ -11,7 +11,7 @@ $headFont: 'Raleway', sans-serif; //Headings, Call-to-actions, navigation
 $bodyFont: 'Open Sans', sans-serif; //Body text
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: $mainBg;
