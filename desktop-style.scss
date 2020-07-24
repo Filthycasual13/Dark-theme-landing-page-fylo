@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
-
+@import url(mobile-style.css);
 $introBg: hsl(217, 28%, 15%); //Intro and Email sign up background
 $mainBg: hsl(218, 28%, 13%); // main background
 $footerBg: hsl(216, 53%, 9%); //footer background
@@ -11,6 +11,7 @@ $headFont: 'Raleway', sans-serif; //Headings, Call-to-actions, navigation
 $bodyFont: 'Open Sans', sans-serif; //Body text
 
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     background-color: $mainBg;
@@ -40,8 +41,8 @@ body {
         justify-content: space-between;
         background-color: $introBg;
         background-image: url(images/illustration-intro.png), url(images/bg-curvy-mobile.svg);;
-        background-size: 45% 45%, 100% 30%;
-        background-position: 170px 80px, 0 315px;
+        background-size: 400px 300px, 100% 30%;
+        background-position: 50% 70px, 0 315px;
         background-repeat: no-repeat;
     
         #logo {
@@ -57,7 +58,7 @@ body {
         .links {
             position: relative;
             top: 15px;
-            right: 15px;
+            right: 25px;
     
             ul {
                 display: flex;
@@ -73,7 +74,7 @@ body {
                         text-decoration: none;
                         color: $white;
                         font-family: $headFont;
-                        font-size: 0.5em;
+                        font-size: 0.7em;
                         font-weight: 400;
                     }
                 }
@@ -83,7 +84,7 @@ body {
     
     .section-one {
         position: relative;
-        top: -170px;
+        top: -80px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -115,7 +116,7 @@ body {
         
         .feature {
             position: relative;
-            bottom: 80px;
+            bottom: 40px;
             left: 40px;
             display: flex;
             flex-direction: column;
@@ -151,19 +152,18 @@ body {
     
     .section-three {
         position: relative;
-        left: 20px;
         bottom: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         color: $white;
         padding: 100px 25px 50px 25px;
 
         .container {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
 
 
             img {
@@ -173,6 +173,7 @@ body {
 
             .container-txt {
                 padding-left: 30px;
+                width: 30%;
 
                 h1 {
                     width: 280px;
@@ -389,3 +390,43 @@ body {
     
 }
 
+
+@media only screen and (min-width:1200px) {
+    #nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 450px;
+        justify-content: space-between;
+        background-color: $introBg;
+        background-image: url(images/illustration-intro.png), url(images/bg-curvy-mobile.svg);;
+        background-size: 400px 300px, 100% 30%;
+        background-position: 50% 70px, 0 315px;
+        background-repeat: no-repeat;
+    
+        #logo {
+            position: relative;
+            top: 15px;
+            left: 75px;
+            
+            img {
+                transform: scale(0.7);
+            }
+        }
+    
+        .links {
+            position: relative;
+            top: 15px;
+            right: 85px;
+    
+            ul {   
+                width: 250px;
+                li {
+                    a {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
